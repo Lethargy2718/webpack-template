@@ -11,6 +11,14 @@ module.exports = {
         sourceType: "module",
     },
     rules: {
-        "no-console": "off",
+        "no-plusplus": "off",
+        "import/prefer-default-export": "off",
+        "max-classes-per-file": "off",
+        "prefer-template": "off",
+        "spaced-comment": "off",
+        "class-methods-use-this": "off",
+        "no-use-before-define": "off",
+        "import/newline-after-import": "off",
+        "no-unused-expressions": "off",
     },
 };
