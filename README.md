@@ -5,6 +5,7 @@ A basic starter Webpack template to ease project setup and streamline your workf
 ---
 
 ## Features
+
 - **Webpack 5**: Modern module bundling and asset management.
 - **Environment-Specific Configurations**: Separate development and production setups using `webpack-merge`.
 - **Live Development**: Includes a dev server with live reloading.
@@ -17,17 +18,20 @@ A basic starter Webpack template to ease project setup and streamline your workf
 ## Getting Started
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/webpack-starter-template.git
 cd webpack-starter-template
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
@@ -35,6 +39,7 @@ npm run dev
 This will open your project in the default browser with live reloading.
 
 ### 4. Build for Production
+
 ```bash
 npm run build
 ```
@@ -42,6 +47,7 @@ npm run build
 Your production-ready files will be output to the `dist` folder.
 
 ### 5. Deploy to GitHub Pages
+
 ```bash
 npm run deploy
 ```
@@ -51,6 +57,7 @@ This command will build your project, create a `gh-pages` branch if it doesn't e
 ---
 
 ## Folder Structure
+
 ```
 webpack-starter-template/
 ├── src/                 # Where all your main files go
@@ -67,11 +74,14 @@ webpack-starter-template/
 ```
 
 ## How to Customize
+
 1. **Update `src/` Files**:
-   - Replace `index.js`, `style.css`, and `template.html` with your project's assets.
+
+    - Replace `index.js`, `style.css`, and `template.html` with your project's assets.
 
 2. **Add New Loaders/Plugins**:
-   - Extend Webpack functionality by installing and configuring additional loaders/plugins (e.g., Babel, Sass).
+
+    - Extend Webpack functionality by installing and configuring additional loaders/plugins (e.g., Babel, Sass).
 
 3. **Modify Webpack Configuration**:
-   - Adjust settings in `webpack.common.js`, `webpack.dev.js`, or `webpack.prod.js` as needed.
+    - Adjust settings in `webpack.common.js`, `webpack.dev.js`, or `webpack.prod.js` as needed.
