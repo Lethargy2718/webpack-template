@@ -12,6 +12,8 @@ A basic starter Webpack template to ease project setup and streamline your workf
 - **Optimized Production Builds**: Minified JavaScript, optimized assets, and automatic cleanup.
 - **Asset Handling**: Supports CSS, HTML, images, and font files by default.
 - **GitHub Pages Deployment**: Deploy your project to GitHub Pages with a single command.
+- **ESLint**: Integrated ESLint configuration for maintaining code quality and consistency.
+- **Prettier**: Pre-configured Prettier to automatically format your code.
 
 ---
 
@@ -70,8 +72,21 @@ webpack-starter-template/
 ├── webpack.prod.js      # Production-specific Webpack configuration
 ├── package.json         # Project dependencies and scripts
 ├── .gitignore           # Files to exclude from version control
+├── .eslintrc.js         # ESLint configuration
+├── .prettierrc          # Prettier configuration
 └── README.md            # Documentation
 ```
+
+## Running ESLint and Prettier
+
+In order to lint and format your code, you can use the following npm scripts:
+
+- **`npm run lint`**: This will run ESLint on all the JavaScript files in the `src` directory and automatically fix any fixable issues.
+- **`npm run pretty`**: This will format the JavaScript, HTML, CSS, JSON, and Markdown files in the `src` directory using Prettier.
+
+- **`npm run lint-all`**: This will run ESLint on all files in the project (not just in the `src` folder) and automatically fix any fixable issues.
+
+- **`npm run pretty-all`**: This will format all JavaScript, HTML, CSS, JSON, and Markdown files in the project using Prettier.
 
 ## How to Customize
 
@@ -84,4 +99,11 @@ webpack-starter-template/
     - Extend Webpack functionality by installing and configuring additional loaders/plugins (e.g., Babel, Sass).
 
 3. **Modify Webpack Configuration**:
+
     - Adjust settings in `webpack.common.js`, `webpack.dev.js`, or `webpack.prod.js` as needed.
+
+4. **ESLint & Prettier Customization**:
+
+    - If you need to modify ESLint or Prettier settings, you can adjust the `.eslintrc.js` or `.prettierrc` files.
+    - To lint and prettify the files in your `src` folder, run `npm run lint` and `npm run pretty`, respectively.
+    - To lint and prettify files in your root folder as well, run `npm run lint-all` and `npm run pretty-all`, respectively. You may need to modify the `.prettierignore` and `.eslintignore` files to control which files are included in the linting and formatting process.
