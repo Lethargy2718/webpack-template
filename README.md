@@ -91,7 +91,7 @@ webpack-template/
 │   ├── index.ts                # Entry point TypeScript file
 │   ├── style.css               # Sample stylesheet
 │   └── template.html           # Base HTML template
-├── tests/                  # Test files (currently empty)
+├── tests/                      # Test files (currently empty)
 ├── .browserlistrc              # Browser support configuration
 ├── .eslintignore               # Files to exclude from linting
 ├── .eslintrc.js                # ESLint configuration
