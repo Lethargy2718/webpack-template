@@ -11,6 +11,7 @@
         "target": "ESNext",
         "allowJs": false,
         "moduleResolution": "node",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "esModuleInterop": true
     }
 }
