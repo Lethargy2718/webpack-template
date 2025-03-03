@@ -16,6 +16,14 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(?:ts|tsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: { configFile: "./babel.config.js" }, // Ensures Babel uses your config
+                },
+            },
+            {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
@@ -34,6 +42,6 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js']
-    }
+        extensions: [".ts", ".tsx", ".js", ".jsx"],
+    },
 };

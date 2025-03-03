@@ -1,12 +1,16 @@
 {
     "compilerOptions": {
-      "outDir": "./dist/",
-      "sourceMap": true,
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es5",
-      "jsx": "react",
-      "allowJs": true,
-      "moduleResolution": "node"
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "strict": false,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+        "useUnknownInCatchVariables": false,
+        "module": "ESNext",
+        "target": "ESNext",
+        "allowJs": false,
+        "moduleResolution": "node",
+        "skipLibCheck": true
     }
 }
