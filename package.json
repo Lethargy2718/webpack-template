@@ -10,7 +10,7 @@
     "author": "",
     "license": "ISC",
     "bin": {
-        "webpack-ts-init": "./bin/cli.js"
+        "webpack-ts-init": "bin/cli.js"
     },
     "dependencies": {
         "chalk": "^5.0.0",
