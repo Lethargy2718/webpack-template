@@ -1,10 +1,16 @@
 #!/usr/bin/env node
 
-const fs = require('fs-extra');
-const path = require('path');
-const { execSync } = require('child_process');
-const chalk = require('chalk');
-const { program } = require('commander');
+import fs from 'fs-extra';
+import path from 'path';
+import { execSync } from 'child_process';
+import chalk from 'chalk';
+import { program } from 'commander';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Get the directory name of the current module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 program
   .argument('<project-name>', 'Name of the project')
