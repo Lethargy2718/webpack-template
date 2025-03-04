@@ -1,24 +1,24 @@
 {
     "name": "webpack-ts-init",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Webpack template creator",
     "main": "index.js",
     "scripts": {
-      "test": "echo 'No tests for the CLI tool'"
+        "test": "echo 'No tests for the CLI tool'"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bin": {
-      "webpack-ts-init": "./bin/cli.js"
+        "webpack-ts-init": "./bin/cli.js"
     },
     "dependencies": {
-      "chalk": "^5.0.0",      
-      "commander": "^11.0.0", 
-      "fs-extra": "^11.0.0"   
+        "chalk": "^5.0.0",
+        "commander": "^11.0.0",
+        "fs-extra": "^11.0.0"
     },
     "files": [
-      "bin",
-      "template"
+        "bin",
+        "template"
     ]
-  }
+}
