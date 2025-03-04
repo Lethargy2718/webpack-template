@@ -1,5 +1,5 @@
 {
-    "name": "project-template",
+    "name": "webpack-ts-init",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -48,5 +48,8 @@
         "webpack-cli": "^6.0.1",
         "webpack-dev-server": "^5.2.0",
         "webpack-merge": "^6.0.1"
+    },
+    "bin": {
+        "webpack": "cli.js"
     }
 }
