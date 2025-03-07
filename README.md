@@ -1,4 +1,4 @@
-# Webpack Template
+ # Webpack Template
 
 A basic starter Webpack template to ease project setup and streamline your workflow.
 
@@ -24,40 +24,46 @@ A basic starter Webpack template to ease project setup and streamline your workf
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/Lethargy2718/webpack-template.git
 cd webpack-template
+```
 
 ### 2. Install Dependencies
 
-bash
+```bash
 npm install
+```
 
 ### 3. Start Development Server
 
-bash
+```bash
 npm run dev
+```
 
 This will open your project in the default browser with live reloading.
 
 ### 4. Build for Production
 
-bash
+```bash
 npm run build
+```
 
 Your production-ready files will be output to the dist folder.
 
 ### 5. Run Tests
 
-bash
+```bash
 npm test
+```
 
 Run Jest tests for your project. Use npm run test:watch to automatically rerun tests on file changes.
 
 ### 6. Deploy to GitHub Pages
 
-bash
+```bash
 npm run deploy
+```
 
 This command will build your project, create a gh-pages branch if it doesn't exist, push the project to the branch, and deploy it to GitHub Pages.
 
@@ -67,11 +73,11 @@ This command will build your project, create a gh-pages branch if it doesn't exi
 
 In order to lint and format your code, you can use the following npm scripts:
 
-- **npm run lint**: This will run ESLint on all the TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the src directory using ESLint.
+- **npm run lint**: This will run ESLint on all the TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the `src` directory using ESLint.
 
-- **npm run pretty**: This will format the TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the src directory using Prettier.
+- **npm run pretty**: This will format the TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the `src` directory using Prettier.
 
-- **npm run lint:all**: This will run ESLint on all TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the project (not just in the src folder).
+- **npm run lint:all**: This will run ESLint on all TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the project (not just in the `src` directory).
 
 - **npm run pretty:all**: This will format all TypeScript, JavaScript, HTML, CSS, JSON, and Markdown files in the project using Prettier.
 
@@ -79,6 +85,7 @@ In order to lint and format your code, you can use the following npm scripts:
 
 ## Folder Structure
 
+```
 webpack-template/
 ├── src/ # Where all your main files go
 │ ├── index.ts # Entry point TypeScript file
@@ -99,6 +106,7 @@ webpack-template/
 ├── webpack.common.js # Shared Webpack configuration
 ├── webpack.dev.js # Development-specific Webpack configuration
 ├── webpack.prod.js # Production-specific Webpack configuration
+```
 
 ---
 
@@ -106,7 +114,7 @@ webpack-template/
 
 1. **Update src/ Files**:
 
-    - Replace index.ts, style.css, and template.html with your project's assets.
+    - Replace `index.ts`, `style.css`, and `template.html` with your project's files.
 
 2. **Add New Loaders/Plugins**:
 
@@ -114,19 +122,19 @@ webpack-template/
 
 3. **Modify Webpack Configuration**:
 
-    - Adjust settings in webpack.common.js, webpack.dev.js, or webpack.prod.js as needed.
+    - Adjust settings in `webpack.common.js`, `webpack.dev.js`, or `webpack.prod.js` as needed.
 
 4. **Customize ESLint & Prettier**:
 
-    - If you need to modify ESLint or Prettier settings, you can adjust the .eslintrc.js or .prettierrc files.
-    - To lint and prettify the files in your src folder, run npm run lint and npm run pretty respectively.
-    - To lint and prettify files in your root folder as well, run npm run lint-all and npm run pretty-all respectively. You may need to modify the .prettierignore and .eslintignore files to control which files are included in the linting and formatting process.
+    - If you need to modify ESLint or Prettier settings, you can adjust the `.eslintrc.js` or `.prettierrc` files.
+    - To lint and prettify the files in your src folder, run `npm run lint` and `npm run pretty` respectively.
+    - To lint and prettify files in your root folder as well, run `npm run lint:all` and `npm run pretty:all` respectively. You may need to modify the `.prettierignore` and `.eslintignore` files to control which files are included in the linting and formatting process.
 
 5. **Configure TypeScript**:
 
-    - Adjust tsconfig.json to include/exclude files, set strict rules, or define custom paths for your TypeScript project.
+    - Adjust `tsconfig.json` to include/exclude files, set strict rules, or define custom paths for your TypeScript project.
 
 6. **Add Jest Tests**:
 
-    - Create test files in the tests/ directory or alongside your source files (e.g., index.test.ts).
-    - Run npm test to run Jest tests or npm run test:watch for continuous testing.
+    - Create test files in the `tests/` directory or alongside your source files (e.g., `index.test.ts`).
+    - Run `npm test` to run Jest tests or `npm run test:watch` for continuous testing.
