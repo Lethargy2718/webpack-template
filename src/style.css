@@ -78,7 +78,9 @@ button {
 }
 
 button,
-label[for],
+label[for]:not(:has(+ :is(input, select, textarea):disabled)),
+select,
+option,
 ::-webkit-search-cancel-button,
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track {
