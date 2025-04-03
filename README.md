@@ -1,4 +1,4 @@
- # Webpack Template
+# Webpack Template
 
 A basic starter Webpack template to ease project setup and streamline your workflow.
 
