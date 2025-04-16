@@ -87,25 +87,25 @@ In order to lint and format your code, you can use the following npm scripts:
 
 ```
 webpack-template/
-├── src/ # Where all your main files go
-│ ├── index.ts # Entry point TypeScript file
-│ ├── style.css # Sample stylesheet
-│ └── template.html # Base HTML template
-├── tests/ # Test files (currently empty)
-├── .browserlistrc # Browser support configuration
-├── .eslintignore # Files to exclude from linting
-├── .eslintrc.js # ESLint configuration
-├── .gitignore # Files to exclude from version control
-├── .prettierignore # Files to exclude from formatting
-├── .prettierrc # Prettier configuration
-├── babel.config.js # Babel configuration
-├── jest.config.js # Jest configuration
-├── package.json # Project dependencies and scripts
-└── README.md # Documentation
-└── tsconfig.json # TypeScript configuration
-├── webpack.common.js # Shared Webpack configuration
-├── webpack.dev.js # Development-specific Webpack configuration
-├── webpack.prod.js # Production-specific Webpack configuration
+├── src/                # Where all your main files go
+│ ├── index.ts          # Entry point TypeScript file
+│ ├── style.css         # Sample stylesheet
+│ └── template.html     # Base HTML template
+├── tests/              # Test files (currently empty)
+├── .browserlistrc      # Browser support configuration
+├── .eslintignore       # Files to exclude from linting
+├── .eslintrc.js        # ESLint configuration
+├── .gitignore          # Files to exclude from version control
+├── .prettierignore     # Files to exclude from formatting
+├── .prettierrc         # Prettier configuration
+├── babel.config.js     # Babel configuration
+├── jest.config.js      # Jest configuration
+├── package.json        # Project dependencies and scripts
+└── README.md           # Documentation
+└── tsconfig.json       # TypeScript configuration
+├── webpack.common.js   # Shared Webpack configuration
+├── webpack.dev.js      # Development-specific Webpack configuration
+├── webpack.prod.js     # Production-specific Webpack configuration
 ```
 
 ---
